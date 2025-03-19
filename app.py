@@ -18,3 +18,5 @@ if st.checkbox("Mostrar gráfico de dispersión entre precio y odómetro"):
     fig = px.scatter(car_data, x="odometer", y="price", title="Precio vs Odómetro")
     st.plotly_chart(fig, use_container_width=True)
     
+import streamlit as st
+st.write("🚀 La aplicación ha iniciado correctamente.")
