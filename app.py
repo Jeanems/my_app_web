@@ -21,5 +21,9 @@ if st.checkbox("Mostrar gráfico de dispersión entre precio y odómetro"):
 st.write("🚀 La aplicación ha iniciado correctamente.")
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    st.run(port=port)
+ import streamlit.web.cli as stcli
+ import sys
+ port = int(os.environ.get("PORT", 8501))
+ sys.argv = ["streamlit", "run", "app.py", "--server.port", str(port)]
+ stcli.main()
+ 
