@@ -5,7 +5,5 @@ Se pueden visualizar histogramas y gráficos de dispersión interactivos basados
 
 ## 📌 Instalación de dependencias
 
-Para instalar todas las dependencias necesarias, ejecuta en la terminal:
-
 ```bash
 pip install -r requirements.txt
